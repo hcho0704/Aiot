@@ -1,2 +1,3 @@
 # Aiot
-Aiot설계입문
+https://www.youtube.com/watch?v=TCNydE6SEUU
+
