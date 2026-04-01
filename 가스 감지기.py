@@ -1,7 +1,7 @@
 from gpiozero import Buzzer, DigitalInputDevice # 'gpiozero' 라이브러리에서 'DigitalInputDevice', 'Buzzer' 클래스를 가져옴
 import time #＇time＇ 라이브러리를 가져옴
 
-bz = Buzzer(18, active_high=False) # GPIO 18번 핀을 부저 제어 핀으로 초기화, 부저 과전압으로 인한 고주파음 제어를 위해 신호 변경
+bz = Buzzer(18, active_high=False) # GPIO 18번 핀을 부저 제어 핀으로 초기화, 가스가 감지되면 더 큰 소리가 나도록 설정값 변경
 gas = DigitalInputDevice(17) # GPIO 17번 핀을 MQ2 센서 입력 핀으로 초기화
 
 try: # 무한 루프를 시작, 아래 동작을 반복함 (Lines 8 ~ 18)
