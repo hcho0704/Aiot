@@ -1,5 +1,5 @@
-from gpiozero import MotionSensor
-import time
+from gpiozero import MotionSensor # gpiozero 라이브러리에서 MotionSensor 클래스를 가져옴
+import time 
 from picamera2 import Picamera2
 import datetime
 
