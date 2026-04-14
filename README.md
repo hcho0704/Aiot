@@ -8,4 +8,4 @@ https://www.youtube.com/shorts/WYmFDmfgGZs
 https://www.youtube.com/watch?v=rZDkVHwRBBA
 
 #  플라스크 웹서버로 LED 제어하기
-https://www.youtube.com/shorts/bxK8t0JRXNs
+https://www.youtube.com/shorts/t4t2TIErJUg
