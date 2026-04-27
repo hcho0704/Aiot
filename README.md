@@ -9,3 +9,6 @@ https://www.youtube.com/watch?v=rZDkVHwRBBA
 
 #  플라스크 웹서버로 LED 제어하기
 https://www.youtube.com/shorts/t4t2TIErJUg
+
+#  API Key 발급받아 온습도 표시 GUI 프로그램 만들기 
+https://www.youtube.com/shorts/PxZpnpVQAW4
