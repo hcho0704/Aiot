@@ -27,7 +27,7 @@ def on_message(client, userdata, msg): # 브로커로부터 메시지 수신 시
 client = mqtt.Client() # MQTT 클라이언트 객체 생성
 client.on_message = on_message # 메시지 수신 시 on_message 함수가 실행되도록 연결
 
-broker_address="192.168.137.230" # 브로커가 실행 중인 라즈베리파이의 IP 주소 설정
+broker_address="192.168.XXX.XXX" # 브로커가 실행 중인 라즈베리파이의 IP 주소 설정
 client.connect(broker_address) # 설정한 IP 주소의 브로커에 연결
 client.subscribe("led",1) # "led" 토픽 구독 등록, QoS 1로 설정 (메시지 최소 1회 수신 보장)
 
