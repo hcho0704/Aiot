@@ -15,3 +15,6 @@ https://www.youtube.com/shorts/PxZpnpVQAW4
 
 # 텔레그램으로 일기예보를 알려주는 알리미 만들기
 https://www.youtube.com/shorts/Q-hQ3vOO7f8
+
+# 인공지능 음성을 인식하여 날씨 정보 알려주는 장치 만들기
+https://www.youtube.com/shorts/C2G2VIm-0bw
