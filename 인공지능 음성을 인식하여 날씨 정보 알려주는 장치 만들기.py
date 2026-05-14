@@ -5,7 +5,7 @@ import asyncio                  # 비동기 처리(작업이 끝날 때까지 �
 import edge_tts                 # 마이크로소프트 엣지의 고품질 음성을 사용하기 위한 도구
 
 # --- 설정값 영역 ---
-API_KEY = "50c3bb1ac58a01ec7b10d84c18626318"  # OpenWeatherMap 서버 접속을 위한 개인 비밀키
+API_KEY = "Insert API Key Here"  # OpenWeatherMap 서버 접속을 위한 개인 비밀키
 CITY = "Seoul"                                 # 날씨를 확인하고 싶은 도시 이름
 # 날씨 데이터를 요청할 웹 주소 (metric 설정으로 섭씨 온도 사용)
 WEATHER_URL = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
