@@ -18,3 +18,6 @@ https://www.youtube.com/shorts/Q-hQ3vOO7f8
 
 # 인공지능 음성을 인식하여 날씨 정보 알려주는 장치 만들기
 https://www.youtube.com/shorts/C2G2VIm-0bw
+
+# OpenCV 졸음방지 디바이스 만들기
+https://www.youtube.com/watch?v=lFqFWJxgvlI
