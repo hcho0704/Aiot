@@ -5,7 +5,7 @@ from tkinter import ttk
 import threading
 import numpy as np
 from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import PolynomialFeatures  # 다항 회귀를 위한 라이브러리 추가
+from sklearn.preprocessing import PolynomialFeatures  # 다항 회귀를 위한 라이브러리
 import requests  # 텔레그램 메시지 전송용
 
 # 라즈베리파이 5 하드웨어 제어 라이브러리
@@ -13,11 +13,9 @@ import board
 import adafruit_dht
 from gpiozero import LED, Buzzer
 
-# =====================================================================
 # [사용자 설정] 텔레그램 봇 정보 입력
 TELEGRAM_TOKEN = ""  # 발급받은 봇 토큰 입력
 CHAT_ID = ""            # 본인의 채팅 ID(숫자) 입력
-# =====================================================================
 
 # 1. 하드웨어 설정 (GPIO 핀 지정)
 DHT_PIN = board.D4       # GPIO 4
@@ -57,16 +55,16 @@ def send_telegram_message(message):
     except Exception as e:
         print("텔레그램 에러:", e)
 
-# 4. 데이터 예측 AI 함수 (★ 다항 회귀 알고리즘으로 변경 ★)
+# 4. 데이터 예측 AI 함수
 def predict_future_value(time_list, value_list, target_future_time=30):
-    # 데이터가 최소 4개 이상 쌓여야 곡선(2차 다항식)을 안정적으로 그릴 수 있습니다.
+    # 데이터가 최소 4개 이상 쌓여야 곡선(2차 다항식)을 안정적으로 그릴 수 있음
     if len(value_list) < 4:
         return value_list[-1] if value_list else 0.0
     
     X = np.array(time_list).reshape(-1, 1)
     y = np.array(value_list)
     
-    # degree=2 설정으로 데이터를 2차 곡선형태(y = ax² + bx + c)로 변환합니다.
+    # degree=2 설정으로 데이터를 2차 곡선형태(y = ax² + bx + c)로 변환
     poly = PolynomialFeatures(degree=2)
     X_poly = poly.fit_transform(X)
     
@@ -132,7 +130,7 @@ def sensor_loop():
                 else:
                     alert_status = "✅ 정상"         
                     
-                # --- [텔레그램 전송 로직] ---
+                # 텔레그램 전송 로직
                 if status_parts:
                     current_now = time.time()
                     if current_now - last_telegram_time > 60:
