@@ -21,3 +21,7 @@ https://www.youtube.com/shorts/C2G2VIm-0bw
 
 # OpenCV 졸음방지 디바이스 만들기
 https://www.youtube.com/watch?v=lFqFWJxgvlI
+
+# 인공지능과 라즈베리파이로 스마트 온습도계 만들기
+https://youtube.com/shorts/c7aa6XIW7rQ
+
